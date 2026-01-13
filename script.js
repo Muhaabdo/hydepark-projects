@@ -20,6 +20,14 @@ menuToggle.addEventListener("click", () => {
   mobileMenu.style.display =
     mobileMenu.style.display === "flex" ? "none" : "flex";
 });
+  const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 
 }
+
 
