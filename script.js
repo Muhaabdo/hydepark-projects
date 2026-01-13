@@ -13,4 +13,13 @@ function toggleLang(){
     lang === 'ar' ? 'AR' : 'EN';
 
   lang = lang === 'ar' ? 'en' : 'ar';
+  const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.style.display =
+    mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
 }
+
