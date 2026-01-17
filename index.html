@@ -236,13 +236,24 @@
   <h2>احصل على الأسعار والعروض</h2>
   <p>اترك بياناتك وسيتم التواصل خلال دقائق</p>
 
-  <form action="thank-you.html">
-    <input type="text" placeholder="الاسم" required>
-    <input type="tel" placeholder="رقم الهاتف" required>
+  <form action="https://formsubmit.co/muha.abdo@gmail.com" method="POST">
+    
+    <!-- Required Fields -->
+    <input type="text" name="name" placeholder="الاسم" required>
+    <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+
+    <!-- Hidden Settings -->
+    <input type="hidden" name="_subject" value="Leads - Landing Page">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thank-you.html">
+
     <button type="submit">احصل على التفاصيل</button>
+
     <small>🔒 لن يتم مشاركة بياناتك</small>
   </form>
 </section>
+<!-- FORM -->
+
 
 <!-- FOOTER -->
 <footer>
@@ -253,6 +264,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
